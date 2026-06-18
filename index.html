@@ -15,7 +15,7 @@
   <!-- Top bar -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <span>International Trading &amp; Distribution · Germany</span>
+      <span data-i18n="topbar">International Trading &amp; Distribution · Germany</span>
       <span class="topbar-contact">
         <a href="mailto:info@intertradegmbh.de">info@intertradegmbh.de</a>
         <a href="tel:+4915140069203">+49 1514 0069203</a>
@@ -32,14 +32,23 @@
       </a>
 
       <nav class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#brands">Brands</a>
-        <a href="#products">Products</a>
-        <a href="#process">Process</a>
-        <a href="#why">Why Us</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact" class="btn btn-nav">Request a Quote</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#brands" data-i18n="nav.brands">Brands</a>
+        <a href="#products" data-i18n="nav.products">Products</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#why" data-i18n="nav.why">Why Us</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="#contact" class="btn btn-nav" data-i18n="nav.requestQuote">Request a Quote</a>
       </nav>
+
+      <div class="lang-switcher" aria-label="Language switcher">
+        <button type="button" class="lang-btn active" data-lang-switcher="en" aria-label="Switch to English">
+          <img src="https://flagcdn.com/w20/gb.png" alt="English flag" />
+        </button>
+        <button type="button" class="lang-btn" data-lang-switcher="de" aria-label="Switch to Deutsch">
+          <img src="https://flagcdn.com/w20/de.png" alt="German flag" />
+        </button>
+      </div>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -53,21 +62,21 @@
     <div class="hero-scrim"></div>
     <div class="container hero-inner">
       <div class="hero-content">
-        <span class="eyebrow light">Connecting brands with markets worldwide</span>
-        <h1>Your reliable partner for international food &amp; beverage trade</h1>
-        <p class="hero-sub">
+        <span class="eyebrow light" data-i18n="hero.eyebrow">Connecting brands with markets worldwide</span>
+        <h1 data-i18n="hero.title">Your reliable partner for international food &amp; beverage trade</h1>
+        <p class="hero-sub" data-i18n="hero.text">
           Intertrade GmbH sources and distributes chocolate, confectionery and beverages
           from leading international brands — supplying retailers, wholesalers and importers
           across Europe, America and beyond.
         </p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Request Business Pricing</a>
-          <a href="#brands" class="btn btn-ghost">View Our Brands</a>
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaPrimary">Request Business Pricing</a>
+          <a href="#brands" class="btn btn-ghost" data-i18n="hero.ctaSecondary">View Our Brands</a>
         </div>
         <ul class="hero-points">
-          <li>Wholesale &amp; full-pallet supply</li>
-          <li>200+ international brands</li>
-          <li>Worldwide shipping</li>
+          <li data-i18n="hero.point1">Wholesale &amp; full-pallet supply</li>
+          <li data-i18n="hero.point2">200+ international brands</li>
+          <li data-i18n="hero.point3">Worldwide shipping</li>
         </ul>
       </div>
     </div>
@@ -78,19 +87,19 @@
     <div class="container stats-grid">
       <div class="stat">
         <strong data-count="200" data-suffix="+">0</strong>
-        <span>International brands</span>
+        <span data-i18n="stats.brands">International brands</span>
       </div>
       <div class="stat">
         <strong data-count="2000" data-suffix="+">0</strong>
-        <span>Product lines</span>
+        <span data-i18n="stats.products">Product lines</span>
       </div>
       <div class="stat">
         <strong data-count="40" data-suffix="+">0</strong>
-        <span>Export countries</span>
+        <span data-i18n="stats.countries">Export countries</span>
       </div>
       <div class="stat">
         <strong data-count="24" data-suffix="h">0</strong>
-        <span>Response time</span>
+        <span data-i18n="stats.response">Response time</span>
       </div>
     </div>
   </section>
@@ -102,31 +111,31 @@
         <div class="about-img about-img-main"></div>
         <div class="about-img about-img-sub"></div>
         <div class="about-badge">
-          <strong>Germany</strong>
-          <span>Central European hub for efficient logistics</span>
+          <strong data-i18n="about.badgeTitle">Germany</strong>
+          <span data-i18n="about.badgeText">Central European hub for efficient logistics</span>
         </div>
       </div>
       <div class="about-text">
-        <span class="eyebrow">About Intertrade GmbH</span>
-        <h2>A trusted name in the international food trade</h2>
-        <p>
+        <span class="eyebrow" data-i18n="about.eyebrow">About Intertrade GmbH</span>
+        <h2 data-i18n="about.title">A trusted name in the international food trade</h2>
+        <p data-i18n="about.p1">
           Based in Germany, Intertrade GmbH specializes in the sourcing and distribution
           of fast-moving consumer goods in the food &amp; beverage segment. We connect
           leading manufacturers with retailers, wholesale groups and importers worldwide,
           giving our clients direct access to some of the most in-demand international brands.
         </p>
-        <p>
+        <p data-i18n="about.p2">
           Our central European location ensures efficient storage and transport, so we can
           deliver high-quality products reliably and on schedule — from single pallets
           to full containers.
         </p>
         <ul class="checklist">
-          <li>Direct access to leading international brands</li>
-          <li>Wholesale (B2B) supply for businesses</li>
-          <li>Full-pallet and container shipments</li>
-          <li>Compliance with European quality standards</li>
+          <li data-i18n="about.bullet1">Direct access to leading international brands</li>
+          <li data-i18n="about.bullet2">Wholesale (B2B) supply for businesses</li>
+          <li data-i18n="about.bullet3">Full-pallet and container shipments</li>
+          <li data-i18n="about.bullet4">Compliance with European quality standards</li>
         </ul>
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="about.cta">Get in Touch</a>
       </div>
     </div>
   </section>
@@ -135,9 +144,9 @@
   <section class="section section-dark" id="brands">
     <div class="container">
       <div class="section-head light">
-        <span class="eyebrow light">Our Partner Brands</span>
-        <h2>International top brands are our strength</h2>
-        <p>
+        <span class="eyebrow light" data-i18n="brands.eyebrow">Our Partner Brands</span>
+        <h2 data-i18n="brands.title">International top brands are our strength</h2>
+        <p data-i18n="brands.text">
           We work with a worldwide network of first-class suppliers, offering our customers
           a strong and diverse portfolio with direct access to the brands shoppers love.
         </p>
@@ -152,7 +161,7 @@
       </div>
     </div>
     <div class="container">
-      <p class="brands-note">…and many more renowned manufacturers, innovative producers and promising new labels.</p>
+      <p class="brands-note" data-i18n="brands.note">…and many more renowned manufacturers, innovative producers and promising new labels.</p>
     </div>
   </section>
 
@@ -160,38 +169,38 @@
   <section class="section section-alt" id="products">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Product Categories</span>
-        <h2>What we trade</h2>
-        <p>A diverse portfolio of food &amp; beverage products for wholesale supply.</p>
+        <span class="eyebrow" data-i18n="products.eyebrow">Product Categories</span>
+        <h2 data-i18n="products.title">What we trade</h2>
+        <p data-i18n="products.text">A diverse portfolio of food &amp; beverage products for wholesale supply.</p>
       </div>
       <div class="cat-grid">
         <article class="cat-card" style="--img: url('https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&amp;fit=crop&amp;w=900&amp;q=80')">
           <div class="cat-overlay"></div>
           <div class="cat-body">
-            <h3>Chocolate</h3>
-            <p>Premium bars, pralines and seasonal confectionery from trusted European brands.</p>
+            <h3 data-i18n="products.card1Title">Chocolate</h3>
+            <p data-i18n="products.card1Text">Premium bars, pralines and seasonal confectionery from trusted European brands.</p>
           </div>
         </article>
         <article class="cat-card" style="--img: url('https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?auto=format&amp;fit=crop&amp;w=900&amp;q=80')">
           <div class="cat-overlay"></div>
           <div class="cat-body">
-            <h3>Confectionery &amp; Candy</h3>
-            <p>Gummies, hard candies, lollipops and sweets for every market and taste.</p>
+            <h3 data-i18n="products.card2Title">Confectionery &amp; Candy</h3>
+            <p data-i18n="products.card2Text">Gummies, hard candies, lollipops and sweets for every market and taste.</p>
           </div>
         </article>
         <article class="cat-card" style="--img: url('https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&amp;fit=crop&amp;w=900&amp;q=80')">
           <div class="cat-overlay"></div>
           <div class="cat-body">
-            <h3>Beverages</h3>
-            <p>Soft drinks, juices, energy drinks and water — sourced and shipped worldwide.</p>
+            <h3 data-i18n="products.card3Title">Beverages</h3>
+            <p data-i18n="products.card3Text">Soft drinks, juices, energy drinks and water — sourced and shipped worldwide.</p>
           </div>
         </article>
         <article class="cat-card" style="--img: url('https://images.unsplash.com/photo-1601598851547-4302969d0614?auto=format&amp;fit=crop&amp;w=900&amp;q=80')">
           <div class="cat-overlay"></div>
           <div class="cat-body">
-            <span class="cat-tag">Wholesale</span>
-            <h3>Bulk &amp; Pallet Orders</h3>
-            <p>Full-pallet and container shipments for importers and retail chains.</p>
+            <span class="cat-tag" data-i18n="products.card4Tag">Wholesale</span>
+            <h3 data-i18n="products.card4Title">Bulk &amp; Pallet Orders</h3>
+            <p data-i18n="products.card4Text">Full-pallet and container shipments for importers and retail chains.</p>
           </div>
         </article>
       </div>
@@ -202,9 +211,9 @@
   <section class="section process" id="process">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">How it works</span>
-        <h2>From inquiry to delivery in four steps</h2>
-        <p>A clear, transparent process designed to get the right products to your business — fast and reliably.</p>
+        <span class="eyebrow" data-i18n="process.eyebrow">How it works</span>
+        <h2 data-i18n="process.title">From inquiry to delivery in four steps</h2>
+        <p data-i18n="process.text">A clear, transparent process designed to get the right products to your business — fast and reliably.</p>
       </div>
       <div class="process-grid">
         <article class="step-card">
@@ -212,32 +221,32 @@
           <span class="step-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h10" stroke-linecap="round"/></svg>
           </span>
-          <h3>Send your inquiry</h3>
-          <p>Tell us the products, brands and quantities you need. We reply within 24 hours.</p>
+          <h3 data-i18n="process.step1Title">Send your inquiry</h3>
+          <p data-i18n="process.step1Text">Tell us the products, brands and quantities you need. We reply within 24 hours.</p>
         </article>
         <article class="step-card">
           <span class="step-num">02</span>
           <span class="step-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 7h6M9 11h6M9 15h4" stroke-linecap="round"/><rect x="5" y="3" width="14" height="18" rx="2"/></svg>
           </span>
-          <h3>Receive your quote</h3>
-          <p>Get competitive bulk pricing with clear terms, availability and lead times.</p>
+          <h3 data-i18n="process.step2Title">Receive your quote</h3>
+          <p data-i18n="process.step2Text">Get competitive bulk pricing with clear terms, availability and lead times.</p>
         </article>
         <article class="step-card">
           <span class="step-num">03</span>
           <span class="step-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg>
           </span>
-          <h3>Confirm &amp; documentation</h3>
-          <p>We handle the order, export papers and full compliance documentation for you.</p>
+          <h3 data-i18n="process.step3Title">Confirm &amp; documentation</h3>
+          <p data-i18n="process.step3Text">We handle the order, export papers and full compliance documentation for you.</p>
         </article>
         <article class="step-card">
           <span class="step-num">04</span>
           <span class="step-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg>
           </span>
-          <h3>Worldwide delivery</h3>
-          <p>Your pallets or containers are shipped on schedule to your destination.</p>
+          <h3 data-i18n="process.step4Title">Worldwide delivery</h3>
+          <p data-i18n="process.step4Text">Your pallets or containers are shipped on schedule to your destination.</p>
         </article>
       </div>
     </div>
@@ -247,38 +256,38 @@
   <section class="section section-alt" id="why">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Why Intertrade</span>
-        <h2>Why companies worldwide trust us</h2>
-        <p>Efficient trading solutions, fast processes and a strong international network — from inquiry to successful delivery.</p>
+        <span class="eyebrow" data-i18n="why.eyebrow">Why Intertrade</span>
+        <h2 data-i18n="why.title">Why companies worldwide trust us</h2>
+        <p data-i18n="why.text">Efficient trading solutions, fast processes and a strong international network — from inquiry to successful delivery.</p>
       </div>
       <div class="why-grid">
         <article class="why-card">
           <span class="why-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
           </span>
-          <h3>Fast Response</h3>
-          <p>We guarantee fast, reliable handling of your inquiries — typically within 24 hours.</p>
+          <h3 data-i18n="why.card1Title">Fast Response</h3>
+          <p data-i18n="why.card1Text">We guarantee fast, reliable handling of your inquiries — typically within 24 hours.</p>
         </article>
         <article class="why-card">
           <span class="why-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 11a4 4 0 1 0-8 0" /><circle cx="12" cy="7" r="3"/><path d="M4 20a8 8 0 0 1 16 0" stroke-linecap="round"/></svg>
           </span>
-          <h3>Personal Consulting</h3>
-          <p>Our experts advise you individually and build solutions tailored to your needs.</p>
+          <h3 data-i18n="why.card2Title">Personal Consulting</h3>
+          <p data-i18n="why.card2Text">Our experts advise you individually and build solutions tailored to your needs.</p>
         </article>
         <article class="why-card">
           <span class="why-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 20h8M12 17v3" stroke-linecap="round"/></svg>
           </span>
-          <h3>Tailored Solutions</h3>
-          <p>Flexible trading solutions that adapt to your markets and processes.</p>
+          <h3 data-i18n="why.card3Title">Tailored Solutions</h3>
+          <p data-i18n="why.card3Text">Flexible trading solutions that adapt to your markets and processes.</p>
         </article>
         <article class="why-card">
           <span class="why-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
           </span>
-          <h3>International Expertise</h3>
-          <p>A strong global network and years of experience secure your success.</p>
+          <h3 data-i18n="why.card4Title">International Expertise</h3>
+          <p data-i18n="why.card4Text">A strong global network and years of experience secure your success.</p>
         </article>
       </div>
     </div>
@@ -290,11 +299,11 @@
     <div class="cta-scrim"></div>
     <div class="container cta-inner">
       <div class="cta-text">
-        <span class="eyebrow light">For Businesses &amp; Importers</span>
-        <h2>Scale your supply with a dependable B2B partner</h2>
-        <p>Competitive bulk pricing, flexible pallet &amp; container shipping, and full export documentation handled by a single point of contact.</p>
+        <span class="eyebrow light" data-i18n="cta.eyebrow">For Businesses &amp; Importers</span>
+        <h2 data-i18n="cta.title">Scale your supply with a dependable B2B partner</h2>
+        <p data-i18n="cta.text">Competitive bulk pricing, flexible pallet &amp; container shipping, and full export documentation handled by a single point of contact.</p>
       </div>
-      <a href="#contact" class="btn btn-primary btn-lg">Request a Wholesale Quote</a>
+      <a href="#contact" class="btn btn-primary btn-lg" data-i18n="cta.button">Request a Wholesale Quote</a>
     </div>
   </section>
 
@@ -302,21 +311,21 @@
   <section class="section section-alt" id="contact">
     <div class="container contact-grid">
       <div class="contact-info">
-        <span class="eyebrow">Get in Touch</span>
-        <h2>Send us your inquiry</h2>
-        <p>We guarantee a response within 24 hours. Send us your request and benefit from fast feedback and individual advice.</p>
+        <span class="eyebrow" data-i18n="contact.eyebrow">Get in Touch</span>
+        <h2 data-i18n="contact.title">Send us your inquiry</h2>
+        <p data-i18n="contact.text">We guarantee a response within 24 hours. Send us your request and benefit from fast feedback and individual advice.</p>
         <ul class="contact-list">
           <li>
-            <span class="ci-label">Email</span>
+            <span class="ci-label" data-i18n="contact.emailLabel">Email</span>
             <a href="mailto:info@intertradegmbh.de">info@intertradegmbh.de</a>
           </li>
           <li>
-            <span class="ci-label">Phone</span>
+            <span class="ci-label" data-i18n="contact.phoneLabel">Phone</span>
             <a href="tel:+4915140069203">+49 1514 0069203</a>
           </li>
           <li>
-            <span class="ci-label">Address</span>
-            Liegnitzer Str. 1, 58642 Iserlohn, Deutschland
+            <span class="ci-label" data-i18n="contact.addressLabel">Address</span>
+            <span data-i18n="contact.address">Liegnitzer Str. 1, 58642 Iserlohn, Deutschland</span>
           </li>
         </ul>
       </div>
@@ -329,32 +338,32 @@
         <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="form-row">
           <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <label for="name" data-i18n="form.name">Full Name</label>
+            <input type="text" id="name" name="name" data-i18n-placeholder="form.namePlaceholder" placeholder="Your name" required />
           </div>
           <div class="form-group">
-            <label for="company">Company <span class="optional">(optional)</span></label>
-            <input type="text" id="company" name="company" placeholder="Your company" />
+            <label for="company"><span data-i18n="form.company">Company</span> <span class="optional" data-i18n="form.optional">(optional)</span></label>
+            <input type="text" id="company" name="company" data-i18n-placeholder="form.companyPlaceholder" placeholder="Your company" />
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <label for="email" data-i18n="form.email">Email</label>
+            <input type="email" id="email" name="email" data-i18n-placeholder="form.emailPlaceholder" placeholder="you@example.com" required />
           </div>
           <div class="form-group">
-            <label for="type">Inquiry Type</label>
+            <label for="type" data-i18n="form.type">Inquiry Type</label>
             <select id="type" name="type">
-              <option value="b2b">Business / Wholesale (B2B)</option>
-              <option value="pallet">Bulk / Pallet Order</option>
+              <option value="b2b" data-i18n="form.optionB2B">Business / Wholesale (B2B)</option>
+              <option value="pallet" data-i18n="form.optionPallet">Bulk / Pallet Order</option>
             </select>
           </div>
         </div>
         <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us what products and quantities you're looking for..." required></textarea>
+          <label for="message" data-i18n="form.message">Message</label>
+          <textarea id="message" name="message" rows="5" data-i18n-placeholder="form.messagePlaceholder" placeholder="Tell us what products and quantities you're looking for..." required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Send Inquiry</button>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit">Send Inquiry</button>
         <p class="form-note" id="formNote" hidden></p>
       </form>
     </div>
@@ -365,30 +374,30 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="assets/logo-icon.png" alt="Intertrade GmbH logo" class="footer-logo" onerror="this.onerror=null;this.src='assets/logo.png'" />
-        <p>International wholesaler of food &amp; FMCG products. Your global partner for food &amp; beverage trading.</p>
+        <p data-i18n="footer.brandText">International wholesaler of food &amp; FMCG products. Your global partner for food &amp; beverage trading.</p>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <h4 data-i18n="footer.companyTitle">Company</h4>
         <nav>
-          <a href="#about">About</a>
-          <a href="#brands">Brands</a>
-          <a href="#products">Products</a>
-          <a href="#why">Why Us</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#brands" data-i18n="nav.brands">Brands</a>
+          <a href="#products" data-i18n="nav.products">Products</a>
+          <a href="#why" data-i18n="nav.why">Why Us</a>
         </nav>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
-        <p>Liegnitzer Str. 1<br />58642 Iserlohn<br />Deutschland</p>
+        <h4 data-i18n="footer.contactTitle">Contact</h4>
+        <p data-i18n="footer.addressLine1">Liegnitzer Str. 1<br />58642 Iserlohn<br />Deutschland</p>
         <p><a href="mailto:info@intertradegmbh.de">info@intertradegmbh.de</a></p>
         <p><a href="tel:+4915140069203">+49 1514 0069203</a></p>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
-        <p>&copy; <span id="year"></span> Intertrade GmbH. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Intertrade GmbH <span data-i18n="footer.rights">All rights reserved.</span></p>
         <nav class="legal-links">
-          <a href="impressum.html">Impressum</a>
-          <a href="datenschutz.html">Datenschutz</a>
+          <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+          <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a>
         </nav>
       </div>
     </div>
