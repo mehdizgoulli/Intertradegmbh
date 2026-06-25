@@ -329,6 +329,12 @@ counters.forEach((el) => countObserver.observe(el));
 const form = document.getElementById("contactForm");
 const formNote = document.getElementById("formNote");
 
+function showFormFeedback(message, isError = false) {
+  formNote.hidden = false;
+  formNote.style.color = isError ? "#d9534f" : "";
+  formNote.textContent = message;
+}
+
 if (form && formNote) {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -349,9 +355,7 @@ if (form && formNote) {
     });
 
     if (!valid) {
-      formNote.hidden = false;
-      formNote.textContent = translations[currentLang]["form.validation"];
-      formNote.style.color = "#d9534f";
+      showFormFeedback(translations[currentLang]["form.validation"], true);
       return;
     }
 
@@ -362,9 +366,7 @@ if (form && formNote) {
       submitBtn.textContent = translations[currentLang]["form.sending"];
     }
 
-    formNote.hidden = false;
-    formNote.style.color = "";
-    formNote.textContent = translations[currentLang]["form.sending"];
+    showFormFeedback(translations[currentLang]["form.sending"]);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -375,17 +377,13 @@ if (form && formNote) {
       const data = await response.json();
 
       if (response.ok && data.success) {
-        formNote.style.color = "";
-        formNote.textContent = translations[currentLang]["form.success"];
+        showFormFeedback(translations[currentLang]["form.success"]);
         form.reset();
       } else {
-        formNote.style.color = "#d9534f";
-        formNote.textContent =
-          data.message || translations[currentLang]["form.error"];
+        showFormFeedback(data.message || translations[currentLang]["form.error"], true);
       }
     } catch (err) {
-      formNote.style.color = "#d9534f";
-      formNote.textContent = translations[currentLang]["form.networkError"];
+      showFormFeedback(translations[currentLang]["form.networkError"], true);
     } finally {
       if (submitBtn) {
         submitBtn.disabled = false;
